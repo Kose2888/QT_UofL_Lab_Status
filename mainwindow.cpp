@@ -6,7 +6,6 @@
 #include <QLineEdit>
 #include <string>
 
-#define GET_VARIABLE_NAME(Variable) (#Variable)
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -23,7 +22,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->tabWidget->setTabText(2, "Overflow Lab");
 
-    std::vector<QWidget *> overflowMachine{ui->widget_5, ui->widget_6, ui->widget_7, ui->widget_8, ui->widget_9};
+    std::vector<QWidget *> overflowMachine{ui->amycus, ui->asbolus, ui->bienor, ui->chariklo,
+                                           ui->chiron, ui->hylonome, ui->nessus, ui->pholus};
 
     /*
     for(unsigned long i = 0; i < overflowMachine.size(); i++) {
@@ -31,16 +31,14 @@ MainWindow::MainWindow(QWidget *parent)
     }
 */
 
-    std::string var = GET_VARIABLE_NAME(ui->widget_2);
-
-    std::cout << var << std::endl;
-
-
     Lab overFlow(overflowMachine);
 
-    //overFlow.changeColour();
+    overFlow.changeColourAll(GREEN);
 
-    std::cout << overFlow.Machine.size() << std::endl;
+    std::cout << overFlow.machine.size() << std::endl;
+
+    if(ui->amycus->objectName() == "amycus")
+        std::cout << "Working" << std::endl;
 
 }
 

@@ -445,7 +445,7 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
            <item row="3" column="1">
-            <widget class="QWidget" name="widget_10" native="true">
+            <widget class="QWidget" name="asbolus" native="true">
              <property name="maximumSize">
               <size>
                <width>100</width>
@@ -473,7 +473,7 @@
             </widget>
            </item>
            <item row="2" column="0">
-            <widget class="QWidget" name="widget_7" native="true">
+            <widget class="QWidget" name="bienor" native="true">
              <property name="maximumSize">
               <size>
                <width>100</width>
@@ -501,7 +501,7 @@
             </widget>
            </item>
            <item row="0" column="0">
-            <widget class="QWidget" name="widget" native="true">
+            <widget class="QWidget" name="nessus" native="true">
              <property name="maximumSize">
               <size>
                <width>100</width>
@@ -529,7 +529,7 @@
             </widget>
            </item>
            <item row="2" column="1">
-            <widget class="QWidget" name="widget_8" native="true">
+            <widget class="QWidget" name="chariklo" native="true">
              <property name="maximumSize">
               <size>
                <width>100</width>
@@ -557,7 +557,7 @@
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="QWidget" name="widget_3" native="true">
+            <widget class="QWidget" name="pholus" native="true">
              <property name="maximumSize">
               <size>
                <width>100</width>
@@ -585,7 +585,7 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QWidget" name="widget_5" native="true">
+            <widget class="QWidget" name="hylonome" native="true">
              <property name="maximumSize">
               <size>
                <width>100</width>
@@ -613,12 +613,15 @@
             </widget>
            </item>
            <item row="3" column="0">
-            <widget class="QWidget" name="widget_9" native="true">
+            <widget class="QWidget" name="amycus" native="true">
              <property name="maximumSize">
               <size>
                <width>100</width>
                <height>50</height>
               </size>
+             </property>
+             <property name="accessibleName">
+              <string>amycus</string>
              </property>
              <property name="styleSheet">
               <string notr="true">background-color: rgb(246, 97, 81);</string>
@@ -641,7 +644,7 @@
             </widget>
            </item>
            <item row="1" column="1">
-            <widget class="QWidget" name="widget_6" native="true">
+            <widget class="QWidget" name="chiron" native="true">
              <property name="styleSheet">
               <string notr="true">background-color: rgb(246, 97, 81);</string>
              </property>
