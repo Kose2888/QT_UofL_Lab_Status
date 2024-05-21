@@ -3,8 +3,10 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 #include <vector>
 #include <QMainWindow>
+
 
 const QString BLACK = "background-color:black;";
 const QString UNKNOWN = "background-color:grey;";
@@ -14,9 +16,13 @@ const QString IN_USE = "background-color:orange;";
 
 
 class Lab {
-public:
+private:
     std::vector<QWidget *> machine;
-    std::vector<std::string> machineNames;
+
+    // From rwho file
+    std::vector<std::string> accountName;
+    std::vector<std::string> machineName;
+
 public:
     Lab();
 
@@ -25,6 +31,10 @@ public:
     ~Lab();
 
     void changeColourAll(QString colour);
+
+    void extract_rwho(std::string fileName);
+
+    void updateLoggedIn(std::string fileName);
 
 };
 
