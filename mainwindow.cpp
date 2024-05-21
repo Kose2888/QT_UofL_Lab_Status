@@ -14,32 +14,33 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
 
+    // Setup for C Lab
     ui->tabWidget->setTabText(0, "C Lab");
+    std::vector<QWidget *> CMachine{};
+    Lab *cLab = new Lab(CMachine);
 
 
+    // Setup for D Lab
     ui->tabWidget->setTabText(1, "D Lab");
+    std::vector<QWidget *> DMachine{};
+    Lab *dLab = new Lab(DMachine);
 
 
+    // Setup for Overflow Lab
     ui->tabWidget->setTabText(2, "Overflow Lab");
-
     std::vector<QWidget *> overflowMachine{ui->amycus, ui->asbolus, ui->bienor, ui->chariklo,
                                            ui->chiron, ui->hylonome, ui->nessus, ui->pholus};
+    Lab *overFlow = new Lab(overflowMachine);
 
-    /*
-    for(unsigned long i = 0; i < overflowMachine.size(); i++) {
-        overflowMachine[i]->setStyleSheet("background-color:black;");
-    }
-*/
 
-    Lab overFlow(overflowMachine);
-
-    overFlow.changeColourAll(GREEN);
-
-    std::cout << overFlow.machine.size() << std::endl;
 
     if(ui->amycus->objectName() == "amycus")
         std::cout << "Working" << std::endl;
 
+
+    delete cLab;
+    delete dLab;
+    delete overFlow;
 }
 
 MainWindow::~MainWindow()

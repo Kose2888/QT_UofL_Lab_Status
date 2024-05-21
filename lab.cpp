@@ -7,6 +7,7 @@ Lab::Lab(){
 
 Lab::Lab(std::vector<QWidget *> v) {
     machine = v;
+    changeColourAll(UNKNOWN);
 }
 
 Lab::~Lab() {

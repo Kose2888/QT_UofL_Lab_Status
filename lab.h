@@ -6,11 +6,11 @@
 #include <vector>
 #include <QMainWindow>
 
-#define GET_VARIABLE_NAME(Variable) (#Variable)
-
 const QString BLACK = "background-color:black;";
-const QString RED = "background-color: rgb(192, 28, 40);";
-const QString GREEN = "background-color:green;";
+const QString UNKNOWN = "background-color:grey;";
+const QString ONLINE = "background-color:green;";
+const QString OFFLINE = "background-color:red;";
+const QString IN_USE = "background-color:orange;";
 
 
 class Lab {
