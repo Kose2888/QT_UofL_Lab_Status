@@ -5,7 +5,7 @@ Lab::Lab(){
 
 Lab::Lab(std::vector<QWidget *> v) {
     machine = v;
-    changeColourAll(UNKNOWN);
+    changeColourAll(ONLINE);
 }
 
 Lab::~Lab() {
@@ -37,7 +37,7 @@ void Lab::extract_rwho(std::string fileName){
         int col1End = 0;
 
         // Find Account Name
-        for(int i = 0; i < line.size(); i++){
+        for(long unsigned int i = 0; i < line.size(); i++){
             if(line[i] == ' ') // Stops before second column
                 break;
             else
@@ -48,10 +48,10 @@ void Lab::extract_rwho(std::string fileName){
         temp = "";
 
 
-        bool check = false;
+        //bool check = false;
 
         // Find Machine Name
-        for(int i = col1End; i < line.size(); i++){
+        for(long unsigned int i = col1End; i < line.size(); i++){
             if(line[i] == ':')
                 break;
 
@@ -65,7 +65,7 @@ void Lab::extract_rwho(std::string fileName){
 
         lineNumber += 1;
     }
-    for(int i = 0; i < accountName.size(); i++){
+    for(long unsigned int i = 0; i < accountName.size(); i++){
         std::cout << "Account Name: " << accountName[i] << std::endl;
         std::cout << "Machine Name: " << machineName[i] << "\n" << std::endl;
     }
@@ -77,8 +77,8 @@ void Lab::extract_rwho(std::string fileName){
 void Lab::updateLoggedIn(std::string fileName){
     extract_rwho(fileName);
 
-    for(int i = 0; i < machineName.size(); i++){
-        for(int j = 0; j < machine.size(); j++){
+    for(long unsigned int i = 0; i < machineName.size(); i++){
+        for(long unsigned int j = 0; j < machine.size(); j++){
             QString temp = "362" + machine[j]->objectName();
             if(temp.toStdString() == machineName[i])
                 machine[j]->setStyleSheet(IN_USE);

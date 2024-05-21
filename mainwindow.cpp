@@ -5,6 +5,7 @@
 #include <iostream>
 #include <QLineEdit>
 #include <string>
+#include <unistd.h>
 
 std::string RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
 
@@ -32,8 +33,7 @@ MainWindow::MainWindow(QWidget *parent)
     std::vector<QWidget *> overflowMachine{ui->amycus, ui->asbolus, ui->bienor, ui->chariklo,
                                            ui->chiron, ui->hylonome, ui->nessus, ui->pholus};
     Lab *overFlow = new Lab(overflowMachine);
-
-    overFlow->updateLoggedIn(RWHOFILE);
+    //overFlow->updateLoggedIn(RWHOFILE);
 
 
     if(ui->amycus->objectName() == "amycus")
