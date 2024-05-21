@@ -4,5 +4,5 @@ moc*
 *.core
 .qmake.stash
 QT_UofL_Lab_Status
-QT_UofL_Lab_Status.pro
 ui_mainwindow.h
+rwho.txt
