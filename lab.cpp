@@ -9,7 +9,7 @@ Lab::Lab(std::string f, std::vector<QWidget *> v) {
     std::string test = "Test";
     timer = new QTimer(this);
     QObject::connect(timer, SIGNAL(timeout()), this, SLOT(updateLoggedIn()));
-    timer->start(5000); //time specified in ms
+    timer->start(30000); //time specified in ms (Every 30 seconds)
 }
 
 Lab::~Lab() {
@@ -24,12 +24,17 @@ void Lab::changeColourAll(QString colour){
 void Lab::extract_rwho(){
     std::ifstream file(fileName);
 
+    accountName.clear();
+    machineName.clear();
+
     // Check if the file is successfully opened
     if (!file.is_open()) {
         std::cerr << "Error opening the file!" << std::endl;
     }
 
     std::string line; // stores each line
+
+    std::cout << "Reading rwho File...";
 
     int lineNumber = 0;
     while (std::getline(file, line)) {
@@ -66,16 +71,22 @@ void Lab::extract_rwho(){
 }
 
 void Lab::updateLoggedIn(){
-    std::cout << "Reading rwho File... Updating Machine Status" << std::endl;
     extract_rwho();
+    std::cout << "Looking for changes" << std::endl;
 
-    for(long unsigned int i = 0; i < machineName.size(); i++){
-        for(long unsigned int j = 0; j < machine.size(); j++){
-            QString temp = "362" + machine[j]->objectName();
-            if(temp.toStdString() == machineName[i]) {
-                machine[j]->setStyleSheet(IN_USE);
-                //std::cout << "Modifying: " << temp << std::endl;
+    for(long unsigned int i = 0; i < machine.size(); i++){
+        for(long unsigned int j = 0; j < machineName.size(); j++){
+            QString temp = "362" + machine[i]->objectName();
+            if(temp.toStdString() == machineName[j]) {
+                std::cout << accountName[j] << " is logged into "
+                          << machineName[j] << std::endl;
+                machine[i]->setStyleSheet(IN_USE);  // Machine in-use if found in rwho file
+                break;
+            }
+            else {
+                machine[i]->setStyleSheet(ONLINE);  // Go back to online if no longer in rhwo file
             }
         }
     }
+    std::cout << std::endl;
 }

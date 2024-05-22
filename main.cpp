@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
     std::vector<QWidget *> overflowMachine{w.ui->amycus, w.ui->asbolus, w.ui->bienor, w.ui->chariklo,
                                            w.ui->chiron, w.ui->hylonome, w.ui->nessus, w.ui->pholus};
     Lab overFlow(RWHOFILE, overflowMachine);
+    overFlow.updateLoggedIn();
 
 
     return a.exec();
