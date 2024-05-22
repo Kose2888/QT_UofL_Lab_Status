@@ -396,12 +396,13 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 lab.o: lab.cpp lab.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o lab.o lab.cpp
 
-main.o: main.cpp mainwindow.h
+main.o: main.cpp mainwindow.h \
+		ui_mainwindow.h \
+		lab.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 mainwindow.o: mainwindow.cpp mainwindow.h \
-		ui_mainwindow.h \
-		lab.h
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
 moc_lab.o: moc_lab.cpp 
