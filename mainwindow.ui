@@ -26,11 +26,11 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(94, 92, 100);</string>
+   <string notr="true">background-color: rgb(154, 153, 150);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(41, 39, 39);</string>
+    <string notr="true">background-color: rgb(36, 33, 33);</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
@@ -47,11 +47,23 @@
         <height>980</height>
        </size>
       </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(36, 31, 49);</string>
+       <string notr="true">background-color: rgb(41, 39, 39);</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
        <number>2</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
       </property>
       <widget class="QWidget" name="C_Lab">
        <attribute name="title">
@@ -198,6 +210,9 @@
              <string notr="true">alternate-background-color: rgb(61, 56, 70);</string>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="bottomMargin">
+              <number>20</number>
+             </property>
              <item alignment="Qt::AlignHCenter">
               <widget class="QLabel" name="label_13">
                <property name="font">
@@ -207,7 +222,7 @@
                 </font>
                </property>
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Lab Status: No Labs In Progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;OverFlow Lab: No Labs In Progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="wordWrap">
                 <bool>true</bool>
@@ -219,8 +234,14 @@
           </item>
           <item>
            <widget class="QWidget" name="widget_4" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>330</height>
+             </size>
+            </property>
             <property name="styleSheet">
-             <string notr="true">background-color: rgb(61, 56, 70);</string>
+             <string notr="true">background-color: rgb(45, 45, 45);</string>
             </property>
             <layout class="QGridLayout" name="gridLayout_4">
              <item row="3" column="1">
@@ -241,7 +262,7 @@
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>asbolus</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;asbolus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -269,7 +290,7 @@
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>nessus</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;nessus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -297,7 +318,7 @@
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>hylonome</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;hylonome&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -325,7 +346,7 @@
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>pholus</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;pholus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -347,7 +368,7 @@
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>chiron</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;chiron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -375,7 +396,7 @@
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>bienor</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;bienor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -403,7 +424,7 @@
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>chariklo</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;chariklo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -434,7 +455,7 @@
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>amycus</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;amycus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -448,26 +469,13 @@
            </widget>
           </item>
           <item>
-           <widget class="Line" name="line">
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(102, 102, 102);</string>
-            </property>
-            <property name="lineWidth">
-             <number>100</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item>
            <layout class="QHBoxLayout" name="horizontalLayout_6">
-            <item alignment="Qt::AlignTop">
+            <item>
              <widget class="QWidget" name="widget_12" native="true">
               <property name="minimumSize">
                <size>
-                <width>100</width>
-                <height>200</height>
+                <width>0</width>
+                <height>0</height>
                </size>
               </property>
               <property name="maximumSize">
@@ -480,7 +488,7 @@
                <string notr="true"/>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_3">
-               <item alignment="Qt::AlignHCenter">
+               <item alignment="Qt::AlignHCenter|Qt::AlignTop">
                 <widget class="QWidget" name="widget_13" native="true">
                  <property name="minimumSize">
                   <size>
@@ -497,8 +505,11 @@
                  <property name="layoutDirection">
                   <enum>Qt::LeftToRight</enum>
                  </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_7">
-                  <item>
+                  <item alignment="Qt::AlignVCenter">
                    <widget class="QWidget" name="widget_16" native="true">
                     <property name="minimumSize">
                      <size>
@@ -551,7 +562,7 @@
                     </layout>
                    </widget>
                   </item>
-                  <item>
+                  <item alignment="Qt::AlignVCenter">
                    <widget class="QWidget" name="widget_15" native="true">
                     <property name="minimumSize">
                      <size>
@@ -604,7 +615,7 @@
                     </layout>
                    </widget>
                   </item>
-                  <item>
+                  <item alignment="Qt::AlignVCenter">
                    <widget class="QWidget" name="widget_14" native="true">
                     <property name="minimumSize">
                      <size>

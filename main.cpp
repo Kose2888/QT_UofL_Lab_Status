@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
+    w.ui->tabWidget->setStyleSheet("QTabBar::tab { height: 50px; width: 150px; }");
 
     // Setup for C Lab
     w.ui->tabWidget->setTabText(0, "C Lab");
@@ -36,7 +37,6 @@ int main(int argc, char *argv[])
                                            w.ui->chiron, w.ui->hylonome, w.ui->nessus, w.ui->pholus};
     Lab overFlow(RWHOFILE, overflowMachine);
     overFlow.updateLoggedIn();
-
 
     return a.exec();
 }
