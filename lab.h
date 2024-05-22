@@ -5,8 +5,8 @@
 #include <string>
 #include <fstream>
 #include <vector>
-#include <QMainWindow>
 
+#include <QMainWindow>
 #include <QApplication>
 #include <QtGui>
 #include <qobject.h>
@@ -29,9 +29,9 @@ private:
     std::vector<std::string> accountName;
     std::vector<std::string> machineName;
 
-public:
-    Lab();
+    QTimer *timer;
 
+public:
     Lab(std::string fileName, std::vector<QWidget *> v);
 
     ~Lab();
@@ -42,13 +42,6 @@ public:
 
 public slots:
     void updateLoggedIn();
-
-    void test(){
-        qDebug() << "Timer...";
-    }
-
-private:
-    QTimer *timer;
 };
 
 #endif // LAB_H

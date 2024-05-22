@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    Lab test;
 
     // Setup for C Lab
     w.ui->tabWidget->setTabText(0, "C Lab");
@@ -36,10 +35,6 @@ int main(int argc, char *argv[])
     std::vector<QWidget *> overflowMachine{w.ui->amycus, w.ui->asbolus, w.ui->bienor, w.ui->chariklo,
                                            w.ui->chiron, w.ui->hylonome, w.ui->nessus, w.ui->pholus};
     Lab overFlow(RWHOFILE, overflowMachine);
-
-
-    if(w.ui->amycus->objectName() == "amycus")
-        std::cout << "Working" << std::endl;
 
 
     return a.exec();

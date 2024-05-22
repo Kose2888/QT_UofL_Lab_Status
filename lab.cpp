@@ -1,10 +1,5 @@
 #include "lab.h"
 
-Lab::Lab(){
-    timer = new QTimer(this);
-    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(test()));
-    timer->start(1000); //time specified in ms
-}
 
 Lab::Lab(std::string f, std::vector<QWidget *> v) {
     fileName = f;
@@ -36,11 +31,8 @@ void Lab::extract_rwho(){
 
     std::string line; // stores each line
 
-    std::cout << "File Content: " << std::endl;
     int lineNumber = 0;
     while (std::getline(file, line)) {
-        //std::cout << line << std::endl; // Print the current line
-
 
         std::string temp = "";
         int col1End = 0;
@@ -57,26 +49,16 @@ void Lab::extract_rwho(){
         temp = "";
 
 
-        //bool check = false;
-
         // Find Machine Name
         for(long unsigned int i = col1End; i < line.size(); i++){
             if(line[i] == ':')
                 break;
-
-            //if(line[i] == '3' && line[i+1] == '6' && line[i+2] == '2')
-            //    check = true;
             if(line[i] != ' ')
                 temp += line[i];
-
         }
         machineName.push_back(temp);
 
         lineNumber += 1;
-    }
-    for(long unsigned int i = 0; i < accountName.size(); i++){
-        std::cout << "Account Name: " << accountName[i] << std::endl;
-        std::cout << "Machine Name: " << machineName[i] << "\n" << std::endl;
     }
 
     // Close the file
@@ -84,14 +66,16 @@ void Lab::extract_rwho(){
 }
 
 void Lab::updateLoggedIn(){
-    std::cout << "Update func" << std::endl;
+    std::cout << "Reading rwho File... Updating Machine Status" << std::endl;
     extract_rwho();
 
     for(long unsigned int i = 0; i < machineName.size(); i++){
         for(long unsigned int j = 0; j < machine.size(); j++){
             QString temp = "362" + machine[j]->objectName();
-            if(temp.toStdString() == machineName[i])
+            if(temp.toStdString() == machineName[i]) {
                 machine[j]->setStyleSheet(IN_USE);
+                //std::cout << "Modifying: " << temp << std::endl;
+            }
         }
     }
 }
