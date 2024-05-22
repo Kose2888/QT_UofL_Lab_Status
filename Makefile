@@ -54,10 +54,12 @@ OBJECTS_DIR   = ./
 
 SOURCES       = lab.cpp \
 		main.cpp \
-		mainwindow.cpp moc_mainwindow.cpp
+		mainwindow.cpp moc_lab.cpp \
+		moc_mainwindow.cpp
 OBJECTS       = lab.o \
 		main.o \
 		mainwindow.o \
+		moc_lab.o \
 		moc_mainwindow.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
@@ -357,9 +359,14 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 	g++ -pipe -O2 -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp
+compiler_moc_header_make_all: moc_lab.cpp moc_mainwindow.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp
+	-$(DEL_FILE) moc_lab.cpp moc_mainwindow.cpp
+moc_lab.cpp: lab.h \
+		moc_predefs.h \
+		/usr/lib/qt5/bin/moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/sysassist/Ethan/qt/QT_UofL_Lab_Status/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/sysassist/Ethan/qt/QT_UofL_Lab_Status -I/home/sysassist/Ethan/qt/QT_UofL_Lab_Status -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include lab.h -o moc_lab.cpp
+
 moc_mainwindow.cpp: mainwindow.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -396,6 +403,9 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		ui_mainwindow.h \
 		lab.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
+
+moc_lab.o: moc_lab.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_lab.o moc_lab.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp

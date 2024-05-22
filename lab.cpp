@@ -1,11 +1,20 @@
 #include "lab.h"
 
 Lab::Lab(){
+    timer = new QTimer(this);
+    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(test()));
+    timer->start(1000); //time specified in ms
 }
 
-Lab::Lab(std::vector<QWidget *> v) {
+Lab::Lab(std::string f, std::vector<QWidget *> v) {
+    fileName = f;
     machine = v;
     changeColourAll(ONLINE);
+
+    std::string test = "Test";
+    timer = new QTimer(this);
+    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(updateLoggedIn()));
+    timer->start(5000); //time specified in ms
 }
 
 Lab::~Lab() {
@@ -17,7 +26,7 @@ void Lab::changeColourAll(QString colour){
     }
 }
 
-void Lab::extract_rwho(std::string fileName){
+void Lab::extract_rwho(){
     std::ifstream file(fileName);
 
     // Check if the file is successfully opened
@@ -74,8 +83,9 @@ void Lab::extract_rwho(std::string fileName){
     file.close();
 }
 
-void Lab::updateLoggedIn(std::string fileName){
-    extract_rwho(fileName);
+void Lab::updateLoggedIn(){
+    std::cout << "Update func" << std::endl;
+    extract_rwho();
 
     for(long unsigned int i = 0; i < machineName.size(); i++){
         for(long unsigned int j = 0; j < machine.size(); j++){

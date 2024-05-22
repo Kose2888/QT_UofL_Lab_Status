@@ -7,6 +7,10 @@
 #include <vector>
 #include <QMainWindow>
 
+#include <QApplication>
+#include <QtGui>
+#include <qobject.h>
+
 
 const QString BLACK = "background-color:black;";
 const QString UNKNOWN = "background-color:grey;";
@@ -15,8 +19,10 @@ const QString OFFLINE = "background-color:red;";
 const QString IN_USE = "background-color:orange;";
 
 
-class Lab {
+class Lab : public QWidget {
+    Q_OBJECT
 private:
+    std::string fileName;
     std::vector<QWidget *> machine;
 
     // From rwho file
@@ -26,16 +32,23 @@ private:
 public:
     Lab();
 
-    Lab(std::vector<QWidget *> v);
+    Lab(std::string fileName, std::vector<QWidget *> v);
 
     ~Lab();
 
     void changeColourAll(QString colour);
 
-    void extract_rwho(std::string fileName);
+    void extract_rwho();
 
-    void updateLoggedIn(std::string fileName);
+public slots:
+    void updateLoggedIn();
 
+    void test(){
+        qDebug() << "Timer...";
+    }
+
+private:
+    QTimer *timer;
 };
 
 #endif // LAB_H
