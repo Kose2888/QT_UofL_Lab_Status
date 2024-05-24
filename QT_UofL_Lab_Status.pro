@@ -6,6 +6,7 @@ TEMPLATE = app
 TARGET = QT_UofL_Lab_Status
 INCLUDEPATH += .
 QT += gui widgets
+QT += network
 
 # You can make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.

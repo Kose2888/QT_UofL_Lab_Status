@@ -12,7 +12,6 @@ std::string RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
 
 int main(int argc, char *argv[])
 {
-
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
