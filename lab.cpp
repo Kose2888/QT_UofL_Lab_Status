@@ -4,7 +4,7 @@
 Lab::Lab(std::string f, std::vector<QWidget *> v) {
     fileName = f;
     machine = v;
-    changeColourAll(ONLINE);
+    changeColourAll(UNKNOWN);
 
     std::string test = "Test";
     timer = new QTimer(this);

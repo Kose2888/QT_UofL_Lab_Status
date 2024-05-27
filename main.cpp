@@ -26,8 +26,15 @@ int main(int argc, char *argv[])
 
     // Setup for D Lab
     w.ui->tabWidget->setTabText(1, "D Lab");
-    std::vector<QWidget *> DMachine{};
+    std::vector<QWidget *> DMachine{w.ui->oberon, w.ui->neried, w.ui->naiad, w.ui->miranada,
+                                    w.ui->metis, w.ui->lysithea, w.ui->leda, w.ui->larissa,
+                                    w.ui->rhea, w.ui->puck, w.ui->proteus, w.ui->portia,
+                                    w.ui->phoebe, w.ui->phobos, w.ui->pasiphae, w.ui->pandora,
+                                    w.ui->ophelia, w.ui->titania, w.ui->titan, w.ui->thebe,
+                                    w.ui->thalassa, w.ui->thethys, w.ui->telesto, w.ui->sinope,
+                                    w.ui->rosalind, w.ui->mimas};
     Lab dLab(RWHOFILE, DMachine);
+    dLab.updateLoggedIn();
 
 
     // Setup for Overflow Lab
