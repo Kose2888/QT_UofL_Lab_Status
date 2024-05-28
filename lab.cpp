@@ -120,8 +120,7 @@ void Lab::checkOffline(){
                 status += line[i];
         }
 
-        //std::cout << "NAME: " << name << " STATUS: " << status << std::endl;
-
+        // Set Status
         for(long unsigned int i = 0; i < machine.size(); i++){
             QString temp = "362" + machine[i]->objectName();
             if(temp.toStdString() == name) {
