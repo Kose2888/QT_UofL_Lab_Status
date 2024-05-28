@@ -1,14 +1,15 @@
 #include "lab.h"
 
 
-Lab::Lab(std::string f, std::vector<QWidget *> v) {
+Lab::Lab(std::vector<QWidget *> v, std::string f, std::string f2) {
     fileName = f;
+    machineHealthFileName = f2;
     machine = v;
     changeColourAll(UNKNOWN);
 
     std::string test = "Test";
     timer = new QTimer(this);
-    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(updateLoggedIn()));
+    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(updateStatus()));
     timer->start(30000); //time specified in ms (Every 30 seconds)
 }
 
@@ -70,7 +71,7 @@ void Lab::extract_rwho(){
     file.close();
 }
 
-void Lab::updateLoggedIn(){
+void Lab::checkLoggedIn(){
     extract_rwho();
     std::cout << "Looking for changes" << std::endl;
 
@@ -88,5 +89,27 @@ void Lab::updateLoggedIn(){
             }
         }
     }
+}
+
+void Lab::checkOffline(){
+    std::ifstream file(machineHealthFileName);
+
+    // Check if the file is successfully opened
+    if (!file.is_open()) {
+        std::cerr << "Error opening the file!" << std::endl;
+    }
+
+    std::string line; // stores each line
+
+    while (std::getline(file, line)) {
+        std::cout << line << std::endl;
+    }
+
+    // Close the file
+    file.close();
+}
+
+void Lab::updateStatus(){
+    checkLoggedIn();
     std::cout << std::endl;
 }

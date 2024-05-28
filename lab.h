@@ -23,6 +23,7 @@ class Lab : public QWidget {
     Q_OBJECT
 private:
     std::string fileName;
+    std::string machineHealthFileName;
     std::vector<QWidget *> machine;
 
     // From rwho file
@@ -32,7 +33,7 @@ private:
     QTimer *timer;
 
 public:
-    Lab(std::string fileName, std::vector<QWidget *> v);
+    Lab(std::vector<QWidget *> v, std::string fileName, std::string fileName2);
 
     ~Lab();
 
@@ -40,8 +41,12 @@ public:
 
     void extract_rwho();
 
+    void checkLoggedIn();
+
+    void checkOffline();
+
 public slots:
-    void updateLoggedIn();
+    void updateStatus();
 };
 
 #endif // LAB_H

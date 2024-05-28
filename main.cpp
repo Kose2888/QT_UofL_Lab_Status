@@ -9,6 +9,7 @@
 #include <unistd.h>
 
 std::string RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
+std::string MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
 
 int main(int argc, char *argv[])
 {
@@ -28,8 +29,8 @@ int main(int argc, char *argv[])
                                     w.ui->himalia, w.ui->hyperion, w.ui->iapetus, w.ui->janus,
                                     w.ui->juliet, w.ui->triton, w.ui->thor, w.ui->jacob,
                                     w.ui->lancer, w.ui->enzo};
-    Lab cLab(RWHOFILE, CMachine);
-    //cLab.updateLoggedIn();
+    Lab cLab(CMachine, RWHOFILE, MACHINEHEALTH);
+    cLab.updateStatus();
 
 
     // Setup for D Lab
@@ -41,16 +42,16 @@ int main(int argc, char *argv[])
                                     w.ui->ophelia, w.ui->titania, w.ui->titan, w.ui->thebe,
                                     w.ui->thalassa, w.ui->thethys, w.ui->telesto, w.ui->sinope,
                                     w.ui->rosalind, w.ui->mimas};
-    Lab dLab(RWHOFILE, DMachine);
-    dLab.updateLoggedIn();
+    Lab dLab(DMachine, RWHOFILE, MACHINEHEALTH);
+    dLab.updateStatus();
 
 
     // Setup for Overflow Lab
     w.ui->tabWidget->setTabText(2, "Overflow Lab");
     std::vector<QWidget *> overflowMachine{w.ui->amycus, w.ui->asbolus, w.ui->bienor, w.ui->chariklo,
                                            w.ui->chiron, w.ui->hylonome, w.ui->nessus, w.ui->pholus};
-    Lab overFlow(RWHOFILE, overflowMachine);
-    overFlow.updateLoggedIn();
+    Lab overFlow(overflowMachine, RWHOFILE, MACHINEHEALTH);
+    overFlow.updateStatus();
 
     return a.exec();
 }
