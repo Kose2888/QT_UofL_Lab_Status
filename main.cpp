@@ -20,8 +20,16 @@ int main(int argc, char *argv[])
 
     // Setup for C Lab
     w.ui->tabWidget->setTabText(0, "C Lab");
-    std::vector<QWidget *> CMachine{};
+    std::vector<QWidget *> CMachine{w.ui->adrastea, w.ui->amalthea, w.ui->ananke, w.ui->ariel,
+                                    w.ui->belinda, w.ui->bianca, w.ui->callisto, w.ui->calypso,
+                                    w.ui->carme, w.ui->charon, w.ui->cordelia, w.ui->cressida,
+                                    w.ui->deimos, w.ui->depina, w.ui->dione, w.ui->elara,
+                                    w.ui->europa, w.ui->galatea, w.ui->ganymede, w.ui->helene,
+                                    w.ui->himalia, w.ui->hyperion, w.ui->iapetus, w.ui->janus,
+                                    w.ui->juliet, w.ui->triton, w.ui->thor, w.ui->jacob,
+                                    w.ui->lancer, w.ui->enzo};
     Lab cLab(RWHOFILE, CMachine);
+    //cLab.updateLoggedIn();
 
 
     // Setup for D Lab

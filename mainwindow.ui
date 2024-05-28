@@ -60,7 +60,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="tabsClosable">
        <bool>false</bool>
@@ -99,7 +99,7 @@
                 </font>
                </property>
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;D Lab: No Labs In Progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;C Lab: No Labs In Progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="wordWrap">
                 <bool>true</bool>
@@ -128,7 +128,7 @@
                </property>
                <layout class="QHBoxLayout" name="horizontalLayout_46">
                 <item>
-                 <widget class="QWidget" name="mimas_3" native="true">
+                 <widget class="QWidget" name="adrastea" native="true">
                   <property name="maximumSize">
                    <size>
                     <width>100</width>
@@ -145,7 +145,7 @@
                       <enum>Qt::LeftToRight</enum>
                      </property>
                      <property name="text">
-                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;adrastea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignCenter</set>
@@ -171,7 +171,7 @@
                   </property>
                   <layout class="QGridLayout" name="gridLayout_40">
                    <item row="0" column="0">
-                    <widget class="QWidget" name="mimas_4" native="true">
+                    <widget class="QWidget" name="himalia" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -188,7 +188,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;himalia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -199,7 +199,7 @@
                     </widget>
                    </item>
                    <item row="1" column="0">
-                    <widget class="QWidget" name="mimas_5" native="true">
+                    <widget class="QWidget" name="hyperion" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -216,7 +216,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;hyperion&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -227,7 +227,7 @@
                     </widget>
                    </item>
                    <item row="2" column="0">
-                    <widget class="QWidget" name="mimas_6" native="true">
+                    <widget class="QWidget" name="iapetus" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -244,7 +244,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;iapetus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -255,7 +255,7 @@
                     </widget>
                    </item>
                    <item row="3" column="0">
-                    <widget class="QWidget" name="mimas_7" native="true">
+                    <widget class="QWidget" name="janus" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -272,7 +272,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;janus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -283,7 +283,7 @@
                     </widget>
                    </item>
                    <item row="4" column="0">
-                    <widget class="QWidget" name="mimas_8" native="true">
+                    <widget class="QWidget" name="juliet" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -300,7 +300,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;juliet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -320,7 +320,7 @@
                   </property>
                   <layout class="QGridLayout" name="gridLayout_41">
                    <item row="0" column="0">
-                    <widget class="QWidget" name="mimas_9" native="true">
+                    <widget class="QWidget" name="helene" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -337,7 +337,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;helene&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -348,7 +348,7 @@
                     </widget>
                    </item>
                    <item row="0" column="1">
-                    <widget class="QWidget" name="mimas_10" native="true">
+                    <widget class="QWidget" name="cressida" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -365,7 +365,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;cressida&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -376,7 +376,7 @@
                     </widget>
                    </item>
                    <item row="1" column="0">
-                    <widget class="QWidget" name="mimas_11" native="true">
+                    <widget class="QWidget" name="ganymede" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -393,7 +393,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ganymede&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -404,7 +404,7 @@
                     </widget>
                    </item>
                    <item row="1" column="1">
-                    <widget class="QWidget" name="mimas_12" native="true">
+                    <widget class="QWidget" name="deimos" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -421,7 +421,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;deimos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -432,7 +432,7 @@
                     </widget>
                    </item>
                    <item row="2" column="0">
-                    <widget class="QWidget" name="mimas_13" native="true">
+                    <widget class="QWidget" name="galatea" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -449,7 +449,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;galatea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -460,7 +460,7 @@
                     </widget>
                    </item>
                    <item row="2" column="1">
-                    <widget class="QWidget" name="mimas_14" native="true">
+                    <widget class="QWidget" name="depina" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -477,7 +477,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;depina&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -488,7 +488,7 @@
                     </widget>
                    </item>
                    <item row="3" column="0">
-                    <widget class="QWidget" name="mimas_15" native="true">
+                    <widget class="QWidget" name="europa" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -505,7 +505,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;europa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -516,7 +516,7 @@
                     </widget>
                    </item>
                    <item row="3" column="1">
-                    <widget class="QWidget" name="mimas_16" native="true">
+                    <widget class="QWidget" name="dione" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -533,7 +533,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;dione&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -544,7 +544,7 @@
                     </widget>
                    </item>
                    <item row="4" column="0">
-                    <widget class="QWidget" name="mimas_17" native="true">
+                    <widget class="QWidget" name="triton" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -561,7 +561,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;triton&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -572,7 +572,7 @@
                     </widget>
                    </item>
                    <item row="4" column="1">
-                    <widget class="QWidget" name="mimas_18" native="true">
+                    <widget class="QWidget" name="elara" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -589,7 +589,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;elara&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -609,7 +609,7 @@
                   </property>
                   <layout class="QGridLayout" name="gridLayout_43">
                    <item row="0" column="0">
-                    <widget class="QWidget" name="mimas_19" native="true">
+                    <widget class="QWidget" name="cordelia" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -626,7 +626,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;cordelia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -637,7 +637,7 @@
                     </widget>
                    </item>
                    <item row="0" column="1">
-                    <widget class="QWidget" name="mimas_20" native="true">
+                    <widget class="QWidget" name="amalthea" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -654,7 +654,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;amalthea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -665,7 +665,7 @@
                     </widget>
                    </item>
                    <item row="1" column="0">
-                    <widget class="QWidget" name="mimas_21" native="true">
+                    <widget class="QWidget" name="charon" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -682,7 +682,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;charon&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -693,7 +693,7 @@
                     </widget>
                    </item>
                    <item row="1" column="1">
-                    <widget class="QWidget" name="mimas_22" native="true">
+                    <widget class="QWidget" name="ananke" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -710,7 +710,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ananke&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -721,7 +721,7 @@
                     </widget>
                    </item>
                    <item row="2" column="0">
-                    <widget class="QWidget" name="mimas_23" native="true">
+                    <widget class="QWidget" name="carme" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -738,7 +738,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;carme&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -749,7 +749,7 @@
                     </widget>
                    </item>
                    <item row="2" column="1">
-                    <widget class="QWidget" name="mimas_24" native="true">
+                    <widget class="QWidget" name="ariel" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -766,7 +766,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ariel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -777,7 +777,7 @@
                     </widget>
                    </item>
                    <item row="3" column="0">
-                    <widget class="QWidget" name="mimas_25" native="true">
+                    <widget class="QWidget" name="calypso" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -794,7 +794,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;calypso&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -805,7 +805,7 @@
                     </widget>
                    </item>
                    <item row="3" column="1">
-                    <widget class="QWidget" name="mimas_26" native="true">
+                    <widget class="QWidget" name="belinda" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -822,7 +822,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;belinda&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -833,7 +833,7 @@
                     </widget>
                    </item>
                    <item row="4" column="0">
-                    <widget class="QWidget" name="mimas_27" native="true">
+                    <widget class="QWidget" name="callisto" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -850,7 +850,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;callisto&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -861,7 +861,7 @@
                     </widget>
                    </item>
                    <item row="4" column="1">
-                    <widget class="QWidget" name="mimas_28" native="true">
+                    <widget class="QWidget" name="bianca" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -878,7 +878,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;bianca&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -898,7 +898,7 @@
                   </property>
                   <layout class="QGridLayout" name="gridLayout_44">
                    <item row="0" column="0">
-                    <widget class="QWidget" name="mimas_29" native="true">
+                    <widget class="QWidget" name="lancer" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -915,7 +915,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;student0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -926,7 +926,7 @@
                     </widget>
                    </item>
                    <item row="1" column="0">
-                    <widget class="QWidget" name="mimas_30" native="true">
+                    <widget class="QWidget" name="enzo" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -943,7 +943,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;student1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -954,7 +954,7 @@
                     </widget>
                    </item>
                    <item row="2" column="0">
-                    <widget class="QWidget" name="mimas_31" native="true">
+                    <widget class="QWidget" name="thor" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -971,7 +971,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;thor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
@@ -982,7 +982,7 @@
                     </widget>
                    </item>
                    <item row="3" column="0">
-                    <widget class="QWidget" name="mimas_32" native="true">
+                    <widget class="QWidget" name="jacob" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -999,7 +999,7 @@
                          <enum>Qt::LeftToRight</enum>
                         </property>
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;jacob&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignCenter</set>
