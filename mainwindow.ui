@@ -60,7 +60,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="tabsClosable">
        <bool>false</bool>
@@ -1403,7 +1403,7 @@
                     </widget>
                    </item>
                    <item row="0" column="3">
-                    <widget class="QWidget" name="miranada" native="true">
+                    <widget class="QWidget" name="miranda" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>
@@ -1944,7 +1944,7 @@
                     </widget>
                    </item>
                    <item row="2" column="1">
-                    <widget class="QWidget" name="thethys" native="true">
+                    <widget class="QWidget" name="tethys" native="true">
                      <property name="maximumSize">
                       <size>
                        <width>100</width>

@@ -84,9 +84,6 @@ void Lab::checkLoggedIn(){
                 machine[i]->setStyleSheet(IN_USE);  // Machine in-use if found in rwho file
                 break;
             }
-            else {
-                machine[i]->setStyleSheet(ONLINE);  // Go back to online if no longer in rhwo file
-            }
         }
     }
 }
@@ -102,7 +99,46 @@ void Lab::checkOffline(){
     std::string line; // stores each line
 
     while (std::getline(file, line)) {
-        std::cout << line << std::endl;
+        std::string name = "";
+        int col1End = 0;
+
+        // Get Machine Name
+        for(long unsigned int i = 0; i < line.size(); i++){
+            if(line[i] == ' ') // Stops before second column
+                break;
+            else
+                name += line[i];
+            col1End++;
+        }
+
+        std::string status = "";
+        // Get Machine Status
+        for(long unsigned int i = col1End; i < line.size(); i++){
+            if(line[i] == ':')
+                break;
+            if(line[i] != ' ')
+                status += line[i];
+        }
+
+        //std::cout << "NAME: " << name << " STATUS: " << status << std::endl;
+
+        for(long unsigned int i = 0; i < machine.size(); i++){
+            QString temp = "362" + machine[i]->objectName();
+            if(temp.toStdString() == name) {
+                if(status == "online") {
+                    machine[i]->setStyleSheet(ONLINE);
+                }
+                else if(status == "offline") {
+                    machine[i]->setStyleSheet(OFFLINE);
+                    std::cout << name << " Is offline" << std::endl;
+                }
+                else {
+                    machine[i]->setStyleSheet(UNKNOWN);
+                    std::cout << "Error: checkOffline function fault" << std::endl;
+                }
+                break;
+            }
+        }
     }
 
     // Close the file
@@ -110,6 +146,7 @@ void Lab::checkOffline(){
 }
 
 void Lab::updateStatus(){
+    checkOffline();
     checkLoggedIn();
     std::cout << std::endl;
 }
