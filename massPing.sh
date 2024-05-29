@@ -4,6 +4,7 @@
 
 grep -e "C509" -e "C513" -e "D519" "/home/sysassist/Documents/Inventory/InventoryCN.csv" | cut -d , -f 2 > names.txt
 FILE="names.txt"
+OUTPUT="machineHealth.txt"
 
 while IFS= read -r name
 do
@@ -18,5 +19,4 @@ do
   fi
 
   echo "$name $status"
-
 done <"$FILE"
