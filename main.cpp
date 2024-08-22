@@ -7,7 +7,9 @@
 #include <QLineEdit>
 #include <QApplication>
 #include <unistd.h>
+#include <QFile>
 
+QString RWHOFILE1 = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
 std::string RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
 std::string MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
 
@@ -18,6 +20,13 @@ int main(int argc, char *argv[])
     w.show();
 
     w.ui->tabWidget->setStyleSheet("QTabBar::tab { height: 50px; width: 150px; }");
+
+    QFile file(RWHOFILE1);
+
+    if (!file.open(QIODevice::ReadOnly))
+    {
+        std::cout << "Error opening file" << std::endl;
+    }
 
     // Setup for C Lab
     w.ui->tabWidget->setTabText(0, "C Lab");
@@ -32,7 +41,7 @@ int main(int argc, char *argv[])
     Lab cLab(CMachine, RWHOFILE, MACHINEHEALTH);
     cLab.updateStatus();
 
-
+/*
     // Setup for D Lab
     w.ui->tabWidget->setTabText(1, "D Lab");
     std::vector<QWidget *> DMachine{w.ui->oberon, w.ui->neried, w.ui->naiad, w.ui->miranda,
@@ -52,6 +61,6 @@ int main(int argc, char *argv[])
                                            w.ui->chiron, w.ui->hylonome, w.ui->nessus, w.ui->pholus};
     Lab overFlow(overflowMachine, RWHOFILE, MACHINEHEALTH);
     overFlow.updateStatus();
-
+*/
     return a.exec();
 }
