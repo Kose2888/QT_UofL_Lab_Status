@@ -22,31 +22,30 @@ void Lab::changeColourAll(QString colour){
 }
 
 void Lab::extract_rwho(){
+    QFile file(fileName);
 
-    /*
-    std::ifstream file(fileName);
+    if (!file.open(QIODevice::ReadOnly))
+    {
+        std::cout << "Error opening file" << std::endl;
+    }
+
+    QTextStream stream(&file);
 
     accountName.clear();
     machineName.clear();
 
-    // Check if the file is successfully opened
-    if (!file.is_open()) {
-        std::cerr << "Error opening the file!" << std::endl;
-    }
+    qDebug() << "Reading rwho File...";
+    while (!stream.atEnd()) {
+        QString line = stream.readLine();
 
-    std::string line; // stores each line
+        //qDebug() << line;
 
-    std::cout << "Reading rwho File...";
-
-    int lineNumber = 0;
-    while (std::getline(file, line)) {
-
-        std::string temp = "";
+        QString temp = "";
         int col1End = 0;
 
         // Find Account Name
-        for(long unsigned int i = 0; i < line.size(); i++){
-            if(line[i] == ' ') // Stops before second column
+        for(int i = 0; i < line.size(); i++){
+            if(line[i] == QChar(' ')) // Stops before second column
                 break;
             else
                 temp += line[i];
@@ -57,7 +56,7 @@ void Lab::extract_rwho(){
 
 
         // Find Machine Name
-        for(long unsigned int i = col1End; i < line.size(); i++){
+        for(int i = col1End; i < line.size(); i++){
             if(line[i] == ':')
                 break;
             if(line[i] != ' ')
@@ -65,31 +64,33 @@ void Lab::extract_rwho(){
         }
         machineName.push_back(temp);
 
-        lineNumber += 1;
+    }
+    file.close();
+
+    std::cout << "Checking Account & Machine Names:" << std::endl;
+
+    for(int i = 0; i < machineName.size(); i++) {
+        qDebug() << accountName[i] << "\t" << machineName[i];
     }
 
-    // Close the file
-    file.close();
-    */
 }
 
 void Lab::checkLoggedIn(){
-    /*
     extract_rwho();
     std::cout << "Looking for changes" << std::endl;
 
     for(long unsigned int i = 0; i < machine.size(); i++){
-        for(long unsigned int j = 0; j < machineName.size(); j++){
+        for(int j = 0; j < machineName.size(); j++){
             QString temp = "362" + machine[i]->objectName();
-            if(temp.toStdString() == machineName[j]) {
-                std::cout << accountName[j] << " is logged into "
-                          << machineName[j] << std::endl;
+            qDebug() << "temp = " << temp;
+            if(temp == machineName[j]) {
+                qDebug() << accountName[j] << " is logged into "
+                          << machineName[j] << "\n";
                 machine[i]->setStyleSheet(IN_USE);  // Machine in-use if found in rwho file
                 break;
             }
         }
     }
-    */
 }
 
 void Lab::checkOffline(){

@@ -8,8 +8,9 @@
 #include <QApplication>
 #include <unistd.h>
 #include <QFile>
+#include <QFileDialog>
 
-QString RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
+QString RWHOFILE = "/home/sysassist/Ethan/qt/build-labStatus-WebAssembly_Qt_6_6_2_multi_threaded-Profile/rwho.txt";
 QString MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
 
 //std::string RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
@@ -23,13 +24,6 @@ int main(int argc, char *argv[])
 
     w.ui->tabWidget->setStyleSheet("QTabBar::tab { height: 50px; width: 150px; }");
 
-    QFile file(RWHOFILE);
-
-    if (!file.open(QIODevice::ReadOnly))
-    {
-        std::cout << "Error opening file" << std::endl;
-    }
-
     // Setup for C Lab
     w.ui->tabWidget->setTabText(0, "C Lab");
     std::vector<QWidget *> CMachine{w.ui->adrastea, w.ui->amalthea, w.ui->ananke, w.ui->ariel,
@@ -41,6 +35,7 @@ int main(int argc, char *argv[])
                                     w.ui->juliet, w.ui->triton, w.ui->thor, w.ui->jacob,
                                     w.ui->lancer, w.ui->enzo};
     Lab cLab(CMachine, RWHOFILE, MACHINEHEALTH);
+    cLab.checkLoggedIn();
     //cLab.updateStatus();
 
 /*
