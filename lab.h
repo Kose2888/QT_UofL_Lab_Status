@@ -22,18 +22,18 @@ const QString IN_USE = "background-color:orange;";
 class Lab : public QWidget {
     Q_OBJECT
 private:
-    std::string fileName;
-    std::string machineHealthFileName;
+    QString fileName;
+    QString machineHealthFileName;
     std::vector<QWidget *> machine;
 
     // From rwho file
-    std::vector<std::string> accountName;
-    std::vector<std::string> machineName;
+    QVector<QString> accountName;
+    QVector<QString> machineName;
 
     QTimer *timer;
 
 public:
-    Lab(std::vector<QWidget *> v, std::string fileName, std::string fileName2);
+    Lab(std::vector<QWidget *> v, QString fileName, QString fileName2);
 
     ~Lab();
 

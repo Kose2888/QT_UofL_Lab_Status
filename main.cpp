@@ -9,9 +9,11 @@
 #include <unistd.h>
 #include <QFile>
 
-QString RWHOFILE1 = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
-std::string RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
-std::string MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
+QString RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
+QString MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
+
+//std::string RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
+//std::string MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
 
 int main(int argc, char *argv[])
 {
@@ -21,7 +23,7 @@ int main(int argc, char *argv[])
 
     w.ui->tabWidget->setStyleSheet("QTabBar::tab { height: 50px; width: 150px; }");
 
-    QFile file(RWHOFILE1);
+    QFile file(RWHOFILE);
 
     if (!file.open(QIODevice::ReadOnly))
     {
@@ -39,7 +41,7 @@ int main(int argc, char *argv[])
                                     w.ui->juliet, w.ui->triton, w.ui->thor, w.ui->jacob,
                                     w.ui->lancer, w.ui->enzo};
     Lab cLab(CMachine, RWHOFILE, MACHINEHEALTH);
-    cLab.updateStatus();
+    //cLab.updateStatus();
 
 /*
     // Setup for D Lab
