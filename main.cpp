@@ -13,8 +13,6 @@
 QString RWHOFILE = "/home/sysassist/Ethan/qt/build-labStatus-WebAssembly_Qt_6_6_2_multi_threaded-Profile/rwho.txt";
 QString MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
 
-//std::string RWHOFILE = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/rwho.txt";
-//std::string MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
 
 int main(int argc, char *argv[])
 {
@@ -23,6 +21,8 @@ int main(int argc, char *argv[])
     w.show();
 
     w.ui->tabWidget->setStyleSheet("QTabBar::tab { height: 50px; width: 150px; }");
+
+
 
     // Setup for C Lab
     w.ui->tabWidget->setTabText(0, "C Lab");
@@ -35,10 +35,10 @@ int main(int argc, char *argv[])
                                     w.ui->juliet, w.ui->triton, w.ui->thor, w.ui->jacob,
                                     w.ui->lancer, w.ui->enzo};
     Lab cLab(CMachine, RWHOFILE, MACHINEHEALTH);
-    cLab.checkLoggedIn();
-    //cLab.updateStatus();
+    cLab.setName("C Lab");
+    cLab.updateStatus();
 
-/*
+
     // Setup for D Lab
     w.ui->tabWidget->setTabText(1, "D Lab");
     std::vector<QWidget *> DMachine{w.ui->oberon, w.ui->neried, w.ui->naiad, w.ui->miranda,
@@ -49,6 +49,7 @@ int main(int argc, char *argv[])
                                     w.ui->thalassa, w.ui->tethys, w.ui->telesto, w.ui->sinope,
                                     w.ui->rosalind, w.ui->mimas};
     Lab dLab(DMachine, RWHOFILE, MACHINEHEALTH);
+    dLab.setName("D Lab");
     dLab.updateStatus();
 
 
@@ -57,7 +58,8 @@ int main(int argc, char *argv[])
     std::vector<QWidget *> overflowMachine{w.ui->amycus, w.ui->asbolus, w.ui->bienor, w.ui->chariklo,
                                            w.ui->chiron, w.ui->hylonome, w.ui->nessus, w.ui->pholus};
     Lab overFlow(overflowMachine, RWHOFILE, MACHINEHEALTH);
+    overFlow.setName("Overflow Lab");
     overFlow.updateStatus();
-*/
+
     return a.exec();
 }

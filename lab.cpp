@@ -2,6 +2,8 @@
 
 
 Lab::Lab(std::vector<QWidget *> v, QString f, QString f2) {
+    name = "Lab";
+
     fileName = f;
     machineHealthFileName = f2;
     machine = v;
@@ -15,6 +17,14 @@ Lab::Lab(std::vector<QWidget *> v, QString f, QString f2) {
 Lab::~Lab() {
 }
 
+void Lab::setName(QString n) {name = n;}
+
+QString Lab::getName() {return name;}
+
+void Lab::displayLab() {
+    qDebug() << "\t\t\t" << name;
+}
+
 void Lab::changeColourAll(QString colour){
     for(unsigned long i = 0; i < machine.size(); i++) {
         machine[i]->setStyleSheet(colour);
@@ -22,6 +32,8 @@ void Lab::changeColourAll(QString colour){
 }
 
 void Lab::extract_rwho(){
+
+
     QFile file(fileName);
 
     if (!file.open(QIODevice::ReadOnly))
@@ -34,11 +46,8 @@ void Lab::extract_rwho(){
     accountName.clear();
     machineName.clear();
 
-    qDebug() << "Reading rwho File...";
     while (!stream.atEnd()) {
         QString line = stream.readLine();
-
-        //qDebug() << line;
 
         QString temp = "";
         int col1End = 0;
@@ -66,51 +75,45 @@ void Lab::extract_rwho(){
 
     }
     file.close();
-
-    std::cout << "Checking Account & Machine Names:" << std::endl;
-
-    for(int i = 0; i < machineName.size(); i++) {
-        qDebug() << accountName[i] << "\t" << machineName[i];
-    }
-
 }
 
 void Lab::checkLoggedIn(){
     extract_rwho();
-    std::cout << "Looking for changes" << std::endl;
 
     for(long unsigned int i = 0; i < machine.size(); i++){
         for(int j = 0; j < machineName.size(); j++){
             QString temp = "362" + machine[i]->objectName();
-            qDebug() << "temp = " << temp;
+            //qDebug() << "temp = " << temp;
             if(temp == machineName[j]) {
-                qDebug() << accountName[j] << " is logged into "
-                          << machineName[j] << "\n";
+                qDebug() << accountName[j] << "\t is logged into" << "\t"
+                          << machineName[j];
                 machine[i]->setStyleSheet(IN_USE);  // Machine in-use if found in rwho file
                 break;
             }
         }
     }
+    qDebug() << "\n";
 }
 
 void Lab::checkOffline(){
 
-    /*
-    std::ifstream file(machineHealthFileName);
+    QFile file(machineHealthFileName);
 
-    // Check if the file is successfully opened
-    if (!file.is_open()) {
-        std::cerr << "Error opening the file!" << std::endl;
+    if (!file.open(QIODevice::ReadOnly))
+    {
+        std::cout << "Error opening file" << std::endl;
     }
 
-    std::string line; // stores each line
+    QTextStream stream(&file);
 
-    while (std::getline(file, line)) {
-        std::string name = "";
+    while (!stream.atEnd()) {
+        QString line = stream.readLine();
+
+        QString name = "";
         int col1End = 0;
 
         // Get Machine Name
-        for(long unsigned int i = 0; i < line.size(); i++){
+        for(int i = 0; i < line.size(); i++){
             if(line[i] == ' ') // Stops before second column
                 break;
             else
@@ -118,9 +121,9 @@ void Lab::checkOffline(){
             col1End++;
         }
 
-        std::string status = "";
+        QString status = "";
         // Get Machine Status
-        for(long unsigned int i = col1End; i < line.size(); i++){
+        for(int i = col1End; i < line.size(); i++){
             if(line[i] == ':')
                 break;
             if(line[i] != ' ')
@@ -130,29 +133,27 @@ void Lab::checkOffline(){
         // Set Status
         for(long unsigned int i = 0; i < machine.size(); i++){
             QString temp = "362" + machine[i]->objectName();
-            if(temp.toStdString() == name) {
+            if(temp == name) {
                 if(status == "online") {
                     machine[i]->setStyleSheet(ONLINE);
                 }
                 else if(status == "offline") {
                     machine[i]->setStyleSheet(OFFLINE);
-                    std::cout << name << " Is offline" << std::endl;
+                    qDebug() << name << " Is offline" << "\n";
                 }
                 else {
                     machine[i]->setStyleSheet(UNKNOWN);
-                    std::cout << "Error: checkOffline function fault" << std::endl;
+                    qDebug() << "Error: checkOffline function fault" << "\n";
                 }
                 break;
             }
         }
     }
-
-    // Close the file
     file.close();
-    */
 }
 
 void Lab::updateStatus(){
+    displayLab();
     checkOffline();
     checkLoggedIn();
     std::cout << std::endl;

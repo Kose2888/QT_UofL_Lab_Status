@@ -10,6 +10,7 @@
 #include <QApplication>
 #include <QtGui>
 #include <qobject.h>
+#include <QFileDialog>
 
 
 const QString BLACK = "background-color:black;";
@@ -22,6 +23,8 @@ const QString IN_USE = "background-color:orange;";
 class Lab : public QWidget {
     Q_OBJECT
 private:
+    QString name;
+
     QString fileName;
     QString machineHealthFileName;
     std::vector<QWidget *> machine;
@@ -36,6 +39,12 @@ public:
     Lab(std::vector<QWidget *> v, QString fileName, QString fileName2);
 
     ~Lab();
+
+    void setName(QString name);
+
+    QString getName();
+
+    void displayLab();
 
     void changeColourAll(QString colour);
 
