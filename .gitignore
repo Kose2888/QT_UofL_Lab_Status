@@ -6,3 +6,4 @@ moc*
 QT_UofL_Lab_Status
 ui_mainwindow.h
 *.txt
+build*

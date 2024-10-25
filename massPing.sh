@@ -2,7 +2,7 @@
 # This script was made for the QT UofL Lab Status program
 # First it gathers the machine names and then runs a ping command with each of them. When the ping comand is run it will check if the recieved and transmitted packets are equal, if they are that means the machine is online.
 
-grep -e "C509" -e "C513" -e "D519" "/home/sysassist/Documents/Inventory/InventoryCN.csv" | cut -d , -f 2 > names.txt
+grep -e "C509" -e "C513" -e "D519" "/root/qt/QT_UofL_Lab_Status/inv/InventoryCN.csv" | cut -d , -f 2 > names.txt
 FILE="names.txt"
 OUTPUT="machineHealth.txt"
 

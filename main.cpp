@@ -10,8 +10,8 @@
 #include <QFile>
 #include <QFileDialog>
 
-QString RWHOFILE = "/home/sysassist/Ethan/qt/build-labStatus-WebAssembly_Qt_6_6_2_multi_threaded-Profile/rwho.txt";
-QString MACHINEHEALTH = "/home/sysassist/Ethan/qt/QT_UofL_Lab_Status/machineHealth.txt";
+QString RWHOFILE = "/root/qt/QT_UofL_Lab_Status/output/rwho.txt";
+QString MACHINEHEALTH = "/root/qt/QT_UofL_Lab_Status/output/machineHealth.txt";
 
 
 int main(int argc, char *argv[])

@@ -54,13 +54,13 @@
        <string notr="true">background-color: rgb(41, 39, 39);</string>
       </property>
       <property name="tabPosition">
-       <enum>QTabWidget::North</enum>
+       <enum>QTabWidget::TabPosition::North</enum>
       </property>
       <property name="tabShape">
-       <enum>QTabWidget::Rounded</enum>
+       <enum>QTabWidget::TabShape::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="tabsClosable">
        <bool>false</bool>
@@ -99,7 +99,7 @@
                 </font>
                </property>
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;C Lab: No Labs In Progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;C Lab&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="wordWrap">
                 <bool>true</bool>
@@ -142,13 +142,13 @@
                    <item>
                     <widget class="QLabel" name="label_114">
                      <property name="layoutDirection">
-                      <enum>Qt::LeftToRight</enum>
+                      <enum>Qt::LayoutDirection::LeftToRight</enum>
                      </property>
                      <property name="text">
                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;adrastea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                      </property>
                      <property name="alignment">
-                      <set>Qt::AlignCenter</set>
+                      <set>Qt::AlignmentFlag::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -185,13 +185,13 @@
                       <item>
                        <widget class="QLabel" name="label_115">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;himalia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -213,13 +213,13 @@
                       <item>
                        <widget class="QLabel" name="label_116">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;hyperion&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -241,13 +241,13 @@
                       <item>
                        <widget class="QLabel" name="label_117">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;iapetus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -269,13 +269,13 @@
                       <item>
                        <widget class="QLabel" name="label_118">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;janus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -297,13 +297,13 @@
                       <item>
                        <widget class="QLabel" name="label_119">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;juliet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -334,13 +334,13 @@
                       <item>
                        <widget class="QLabel" name="label_120">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;helene&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -362,13 +362,13 @@
                       <item>
                        <widget class="QLabel" name="label_121">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;cressida&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -390,13 +390,13 @@
                       <item>
                        <widget class="QLabel" name="label_122">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ganymede&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -418,13 +418,13 @@
                       <item>
                        <widget class="QLabel" name="label_123">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;deimos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -446,13 +446,13 @@
                       <item>
                        <widget class="QLabel" name="label_124">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;galatea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -474,13 +474,13 @@
                       <item>
                        <widget class="QLabel" name="label_125">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;depina&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -502,13 +502,13 @@
                       <item>
                        <widget class="QLabel" name="label_126">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;europa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -530,13 +530,13 @@
                       <item>
                        <widget class="QLabel" name="label_127">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;dione&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -558,13 +558,13 @@
                       <item>
                        <widget class="QLabel" name="label_128">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;triton&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -586,13 +586,13 @@
                       <item>
                        <widget class="QLabel" name="label_129">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;elara&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -623,13 +623,13 @@
                       <item>
                        <widget class="QLabel" name="label_130">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;cordelia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -651,13 +651,13 @@
                       <item>
                        <widget class="QLabel" name="label_131">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;amalthea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -679,13 +679,13 @@
                       <item>
                        <widget class="QLabel" name="label_132">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;charon&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -707,13 +707,13 @@
                       <item>
                        <widget class="QLabel" name="label_133">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ananke&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -735,13 +735,13 @@
                       <item>
                        <widget class="QLabel" name="label_134">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;carme&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -763,13 +763,13 @@
                       <item>
                        <widget class="QLabel" name="label_135">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ariel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -791,13 +791,13 @@
                       <item>
                        <widget class="QLabel" name="label_136">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;calypso&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -819,13 +819,13 @@
                       <item>
                        <widget class="QLabel" name="label_137">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;belinda&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -847,13 +847,13 @@
                       <item>
                        <widget class="QLabel" name="label_138">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;callisto&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -875,13 +875,13 @@
                       <item>
                        <widget class="QLabel" name="label_139">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;bianca&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -912,13 +912,13 @@
                       <item>
                        <widget class="QLabel" name="label_143">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;student0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -940,13 +940,13 @@
                       <item>
                        <widget class="QLabel" name="label_144">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;student1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -968,13 +968,13 @@
                       <item>
                        <widget class="QLabel" name="label_145">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;thor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -996,13 +996,13 @@
                       <item>
                        <widget class="QLabel" name="label_146">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;jacob&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1048,7 +1048,7 @@
                 <string notr="true">background-color: rgb(36, 33, 33);</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_100">
-                <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+                <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignTop">
                  <widget class="QWidget" name="widget_79" native="true">
                   <property name="minimumSize">
                    <size>
@@ -1063,7 +1063,7 @@
                    </size>
                   </property>
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="autoFillBackground">
                    <bool>false</bool>
@@ -1328,7 +1328,7 @@
                 </font>
                </property>
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;D Lab: No Labs In Progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;D Lab&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="wordWrap">
                 <bool>true</bool>
@@ -1371,13 +1371,13 @@
                    <item>
                     <widget class="QLabel" name="label_77">
                      <property name="layoutDirection">
-                      <enum>Qt::LeftToRight</enum>
+                      <enum>Qt::LayoutDirection::LeftToRight</enum>
                      </property>
                      <property name="text">
                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;mimas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                      </property>
                      <property name="alignment">
-                      <set>Qt::AlignCenter</set>
+                      <set>Qt::AlignmentFlag::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -1414,13 +1414,13 @@
                       <item>
                        <widget class="QLabel" name="label_55">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;neried&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1442,13 +1442,13 @@
                       <item>
                        <widget class="QLabel" name="label_59">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;oberon&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1470,13 +1470,13 @@
                       <item>
                        <widget class="QLabel" name="label_54">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;miranda&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1498,13 +1498,13 @@
                       <item>
                        <widget class="QLabel" name="label_64">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;titania&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1526,13 +1526,13 @@
                       <item>
                        <widget class="QLabel" name="label_63">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;titan&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1554,13 +1554,13 @@
                       <item>
                        <widget class="QLabel" name="label_61">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;portia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1582,13 +1582,13 @@
                       <item>
                        <widget class="QLabel" name="label_56">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;naiad&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1610,13 +1610,13 @@
                       <item>
                        <widget class="QLabel" name="label_62">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;thebe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1638,13 +1638,13 @@
                       <item>
                        <widget class="QLabel" name="label_57">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;rhea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1666,13 +1666,13 @@
                       <item>
                        <widget class="QLabel" name="label_60">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;proteus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1694,13 +1694,13 @@
                       <item>
                        <widget class="QLabel" name="label_58">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;puck&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1731,13 +1731,13 @@
                       <item>
                        <widget class="QLabel" name="label_65">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;metis&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1759,13 +1759,13 @@
                       <item>
                        <widget class="QLabel" name="label_66">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;lysithea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1787,13 +1787,13 @@
                       <item>
                        <widget class="QLabel" name="label_67">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;leda&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1815,13 +1815,13 @@
                       <item>
                        <widget class="QLabel" name="label_72">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;larissa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1843,13 +1843,13 @@
                       <item>
                        <widget class="QLabel" name="label_69">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;phoebe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1871,13 +1871,13 @@
                       <item>
                        <widget class="QLabel" name="label_70">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;phobos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1899,13 +1899,13 @@
                       <item>
                        <widget class="QLabel" name="label_71">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;pasiphae&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1927,13 +1927,13 @@
                       <item>
                        <widget class="QLabel" name="label_68">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;pandora&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1955,13 +1955,13 @@
                       <item>
                        <widget class="QLabel" name="label_79">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ophelia&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -1983,13 +1983,13 @@
                       <item>
                        <widget class="QLabel" name="label_73">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;thalassa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -2011,13 +2011,13 @@
                       <item>
                        <widget class="QLabel" name="label_74">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;tethys&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -2039,13 +2039,13 @@
                       <item>
                        <widget class="QLabel" name="label_75">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;telesto&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -2067,13 +2067,13 @@
                       <item>
                        <widget class="QLabel" name="label_76">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;sinope&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -2095,13 +2095,13 @@
                       <item>
                        <widget class="QLabel" name="label_78">
                         <property name="layoutDirection">
-                         <enum>Qt::LeftToRight</enum>
+                         <enum>Qt::LayoutDirection::LeftToRight</enum>
                         </property>
                         <property name="text">
                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;rosalind&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
-                         <set>Qt::AlignCenter</set>
+                         <set>Qt::AlignmentFlag::AlignCenter</set>
                         </property>
                        </widget>
                       </item>
@@ -2147,7 +2147,7 @@
                 <string notr="true">background-color: rgb(36, 33, 33);</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_105">
-                <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+                <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignTop">
                  <widget class="QWidget" name="widget_91" native="true">
                   <property name="minimumSize">
                    <size>
@@ -2162,7 +2162,7 @@
                    </size>
                   </property>
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="autoFillBackground">
                    <bool>false</bool>
@@ -2415,7 +2415,7 @@
                 </font>
                </property>
                <property name="text">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;Overflow Lab: No Labs In Progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#ffffff;&quot;&gt;Overflow Lab&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="wordWrap">
                 <bool>true</bool>
@@ -2452,13 +2452,13 @@
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_6">
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;chariklo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2480,13 +2480,13 @@
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_5">
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;bienor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2511,13 +2511,13 @@
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_7">
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;amycus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2539,13 +2539,13 @@
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_2">
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;pholus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2561,13 +2561,13 @@
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_4">
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;chiron&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2589,13 +2589,13 @@
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_3">
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;hylonome&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2617,13 +2617,13 @@
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_8">
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;asbolus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2645,13 +2645,13 @@
                 <item>
                  <widget class="QLabel" name="label">
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;nessus&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignCenter</set>
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -2662,7 +2662,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QWidget" name="" native="true">
+           <widget class="QWidget" name="widget" native="true">
             <property name="styleSheet">
              <string notr="true">background-color: rgb(36, 33, 33);</string>
             </property>
@@ -2685,7 +2685,7 @@
                 <string notr="true">background-color: rgb(36, 33, 33);</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_107">
-                <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+                <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignTop">
                  <widget class="QWidget" name="widget_110" native="true">
                   <property name="minimumSize">
                    <size>
@@ -2700,7 +2700,7 @@
                    </size>
                   </property>
                   <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                   <enum>Qt::LayoutDirection::LeftToRight</enum>
                   </property>
                   <property name="autoFillBackground">
                    <bool>false</bool>
